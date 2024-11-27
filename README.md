@@ -153,7 +153,8 @@ help
 ----
 
 ```
-usage: udp-canary.py [-h] (--client | --server | --generate-key) [--id ID] [--host HOST] [--port PORT] [--key KEY] [--log LOG]
+usage: udp-canary.py [-h] (--client | --server | --generate-key) [--id ID]
+                     [--host HOST] [--port PORT] [--key KEY] [--log LOG]
 
 UDP connectivity monitor
 
@@ -161,10 +162,13 @@ options:
   -h, --help      show this help message and exit
   --client        run client
   --server        run server
-  --generate-key  generate and output an encryption encryption/authentication key, and exit
+  --generate-key  generate and output an encryption encryption/authentication
+                  key, and exit
   --id ID         unique client id string
-  --host HOST     client: IPv4 address of server, server: bind address (server, default: 0.0.0.0)
-  --port PORT     Server UDP port
-  --key KEY       16-byte, base64-encoded encryption/authentication key, as output by --generate-key
+  --host HOST     client: IPv4 address of server, server: bind address
+                  (server, default: 0.0.0.0)
+  --port PORT     Server UDP port, default 43210
+  --key KEY       16-byte, base64-encoded encryption/authentication key, as
+                  output by --generate-key
   --log LOG       log filepath (default: udp-canary.log)
 ```

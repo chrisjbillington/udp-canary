@@ -237,7 +237,7 @@ if __name__ == '__main__':
         '--port',
         type=int,
         required=False,
-        help='Server UDP port',
+        help=f'Server UDP port, default {Server.DEFAULT_PORT}',
         metavar='PORT',
     )
     parser.add_argument(
